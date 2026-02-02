@@ -29,21 +29,21 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Screenshots
 
 ### Main page
-![Main](screenshots/main.png)
-![Main](screenshots/main2.png)
+![Main](screenshots/main.PNG)
+![Main](screenshots/main2.PNG)
 
 ### About us page
-![About us](screenshots/about.png)
+![About us](screenshots/about.PNG)
 
 ### Products page
-![Products](screenshots/products.png)
+![Products](screenshots/products.PNG)
 
 ### News page
-![News](screenshots/news.png)
+![News](screenshots/news.PNG)
 
 ### Login page
-![Login](screenshots/login.png)
+![Login](screenshots/login.PNG)
 
 ### Edit page
-![Edit](screenshots/edit.png)
-![Edit](screenshots/edit2.png)
+![Edit](screenshots/edit.PNG)
+![Edit](screenshots/edit2.PNG)
