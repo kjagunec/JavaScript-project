@@ -96,7 +96,9 @@ module.exports = function(express, pool, jwt, secret) {
       user = {
         id : req.body.id,
         email : req.body.email,
-        password : require('crypto').pbkdf2Sync(password, req.body.salt, 10000, 64, 'sha512').toString('hex'),
+        password : require('crypto')
+          .pbkdf2Sync(password, req.body.salt, 10000, 64, 'sha512')
+          .toString('hex'),
         username : req.body.username,
         admin : req.body.admin,
         salt : req.body.salt
@@ -105,8 +107,6 @@ module.exports = function(express, pool, jwt, secret) {
     }
 
     await put(res, 'users', user);
-
-    //treba provjerit jel edit sad ok i treba napravit da se token osvježava ili nekaj
 
   });
 

@@ -1,4 +1,4 @@
-module.exports = function(express, pool, jwt, secret, crypto) {
+module.exports = function(express, pool, jwt, secret) {
 
   let authRouter = express.Router();
 
@@ -20,7 +20,8 @@ module.exports = function(express, pool, jwt, secret, crypto) {
 
       if (rows[0].salt) {
 
-        let hash = require('crypto').pbkdf2Sync(req.body.password, rows[0].salt, 10000, 64, 'sha512');
+        let hash = require('crypto')
+          .pbkdf2Sync(req.body.password, rows[0].salt, 10000, 64, 'sha512');
         compare = hash.toString('hex') === rows[0].password;
 
       }
